@@ -24,5 +24,6 @@ These are practical "how do I actually do X" recipes, not an API reference (that
 | [Production deployment](./production-deployment.md) | The hardened posture: in-process TLS + API-key auth, health-probe & gRPC posture, air-gapped neural-model staging, and copying data out of a live Elasticsearch (scroll + bulk) | inline `curl` + `bash` |
 | [Air-gapped deployment](./air-gapped-deployment.md) | Stage a release and optional neural model on a connected machine, then run XERJ offline with explicit network and persistence boundaries | inline `curl` + `bash` |
 | [Diagnose CPU and memory with pprof](./debug-profiling.md) | A private, bounded, symbolized CPU/heap capture with reproducibility manifest, artifact validation, and AI analysis prompts | [`debug-profiling/`](../../demo/playbooks/debug-profiling/) |
+| [Banking Corporate Credit Monitoring & EWS](./banking-credit-ews.md) | Real-time moving z-score early warning surveillance and namespaced borrower inspection memory (co-authored with NazoratAI) | [`banking_credit_ews.py`](../../recipes/banking_credit_ews.py) |
 
 Every example is stdlib-only Python 3, plain `curl`, or the `xerj` binary itself — no dependencies to install. Start XERJ (`./target/release/xerj --data-dir ./data --insecure`), then run any example.
